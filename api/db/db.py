@@ -7,3 +7,6 @@ app.config['MYSQL_PASSWORD'] ='password'
 app.config['MYSQL_DB'] = 'db_api_flask'
 
 mysql = MySQL(app)
+
+class DBError(Exception):
+    pass
